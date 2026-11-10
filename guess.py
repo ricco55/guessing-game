@@ -28,5 +28,5 @@ while answer == "y":
     if count < best:
         best = count
         print("New record!")
-    print("Best so far: ", best, "tries")
+    print("Best so far:", best, "tries")
     answer = input("Play again? (y/n) ").lower()
