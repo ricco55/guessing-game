@@ -25,4 +25,4 @@ while answer == "y":
         elif guess > secret:
             print("Lower!")
     print("You got it in", count, "tries!")
-    answer = input("Play again? (y/n) ")
+    answer = input("Play again? (y/n) ").lower()
