@@ -13,6 +13,9 @@ while guess != secret:
     except ValueError:
         print("Please type a number!")
         continue
+    if guess < 1 or guess > 20:
+        print("Between 1 and 20 please!")
+        continue
     count = count + 1
     if guess < secret:
         print("Higher!")
