@@ -2,7 +2,7 @@ import random
 
 
 answer = "y"
-
+best = 999
 
 while answer == "y":
     secret = random.randint(1, 20)
@@ -25,4 +25,7 @@ while answer == "y":
         elif guess > secret:
             print("Lower!")
     print("You got it in", count, "tries!")
+    if count < best:
+        best = count
+    print("Best so far: ", best, "tries")
     answer = input("Play again? (y/n) ").lower()
